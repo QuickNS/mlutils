@@ -194,8 +194,7 @@ def analyze_single_feature_removal(m, x, y, f_list, metric='oob', val_data=None)
 
 def analyze_multiple_feature_removal(m, x, y, f_list, metric='oob', val_data=None):
    """
-   Uses a RandomForestRegressor to analyze the impact of removing a feature on a score metric.
-   You can pass a list of features and it will iterate removing one feature at a time.
+   Uses a RandomForestRegressor to analyze the impact of removing a set of features on a score metric.
    """
    def score_model(x, y, x_val=None, y_val=None):
       m.fit(x,y)

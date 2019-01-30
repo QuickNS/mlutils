@@ -4,7 +4,6 @@ import math
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import KFold
 from sklearn.metrics import mean_squared_error, r2_score
-from mlutils.features import shuffle_feature
 from sklearn.ensemble.forest import RandomForestRegressor
 
 def train_regressor_cv(model, X_train, y_train, k_folds=5):

@@ -138,7 +138,6 @@ def plot_classification_report(classification_report, title='Classification repo
     ax.set_yticklabels(yticklabels, rotation='horizontal', va='center')
    
 
-
 def plot_partial_dependence(m, df, feat, clusters=None, feat_name=None):
     feat_name = feat_name or feat
     p = pdp.pdp_isolate(m, df, df.columns, feat)
